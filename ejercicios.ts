@@ -9,24 +9,33 @@ interface Animal {
 // ejercicio 2 //
 
 
-class perro implements Animal {
-nombre :string = "perro";
+class Perro implements Animal {
+nombre :string;
+constructor(n:string){
+        this.nombre = n;
+    }
 gritar(): string {
     return "Guau";
 }
 }
 
 
-class gato implements Animal {
-nombre :string = "gato";
+class Gato implements Animal {
+nombre :string;
+constructor(n:string){
+        this.nombre = n;
+    }
 gritar(): string {
     return "Miau";
 }
 }
 
 
-class vaca  implements Animal {
-nombre :string = "vaca";
+class Vaca  implements Animal {
+nombre :string;
+constructor(n:string){
+        this.nombre = n;
+    }
 gritar(): string {
     return "Muu";
 }
@@ -36,7 +45,16 @@ gritar(): string {
 //ejercicio 3
 
 
-function  describirAnimal (Animal: Animal) {
-  console.log(Animal.nombre + " dice: " + Animal.gritar());
+function describirAnimal (animal: Animal) {
+  console.log(animal.nombre + " dice: " + animal.gritar());
 }
 
+// ejercicio 4
+const perro: Perro = new Perro("Plumis");
+const vaca: Vaca = new Vaca("Lola");
+const gato: Gato = new Gato("Tom");
+
+// ejercicio 5
+describirAnimal(perro);
+describirAnimal(vaca);
+describirAnimal(gato);
