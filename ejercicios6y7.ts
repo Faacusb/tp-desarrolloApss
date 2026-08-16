@@ -13,8 +13,7 @@ enum DiasSemana {
 // Ejemplo sencillo para ver que funciona
 const diaActual: DiasSemana = DiasSemana.Miercoles;
 console.log("Día actual:", diaActual);
-
-
+
 // Punto 7: Variable que acepta solo número o texto
 let valorDato: string | number;
 
