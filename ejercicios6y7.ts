@@ -1,29 +1,21 @@
-
-// Punto 6: Enumeración con los días de la semana
-enum DiasSemana {
-    Lunes = "Lunes",
-    Martes = "Martes",
-    Miercoles = "Miércoles",
-    Jueves = "Jueves",
-    Viernes = "Viernes",
-    Sabado = "Sábado",
-    Domingo = "Domingo"
-}
-
-// Ejemplo sencillo para ver que funciona
-const diaActual: DiasSemana = DiasSemana.Miercoles;
-console.log("Día actual:", diaActual);
-
-// Punto 7: Variable que acepta solo número o texto
-let valorDato: string | number;
-
-// Primero guardamos el nombre que pide el enunciado
-valorDato = "Messi";
-console.log("Primer valor:", valorDato);
-
-// Después lo cambiamos por el número 10
-valorDato = 10;
-console.log("Valor modificado:", valorDato);
-
-// Si intentamos poner otro tipo (por ejemplo un booleano) TypeScript nos avisa que está mal
-// valorDato = true;
+// Punto 6: Días de la semana
+ enum DiasSemana {
+     Lunes = "Lunes",
+     Martes = "Martes",
+     Miercoles = "Miércoles",
+     Jueves = "Jueves",
+     Viernes = "Viernes",
+     Sabado = "Sábado",
+     Domingo = "Domingo"
+ }
+ // Prueba del enum
+ const diaActual = DiasSemana.Miercoles;
+ console.log("Día actual:", diaActual);
+ 
+// Punto 7: Puede ser texto o número
+ let valor: string | number;
+ valor = "Messi";
+ console.log("Primer valor:", valor);
+ valor = 10;
+ console.log("Segundo valor:", valor);
+ // valor = true; // Error: no permite otro tipo
